@@ -1,0 +1,18 @@
+.right
+{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    display: inline-block;
+    width: 20%;
+}
+.right button
+{
+    color:rgb(24, 24, 20);
+    display: inline-block;
+    font-size: 150%;
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 15px;
+    margin: auto;
+    margin-left: 10%;
+}
