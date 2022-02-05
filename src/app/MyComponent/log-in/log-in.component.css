@@ -24,17 +24,22 @@
     display: inline-block;
     width: 10%;
 }
-.left image
+.left img
 {
-    width:10px;
-    height:10px;
+    margin-left: 12px;
+    width:60px;
+    height:60px;
+}
+.left h3
+{
+    
 }
 .container
 {
     text-align: center;
     border: 2px solid black;
     margin-top: 20%;
-    margin-left: 63%;
+    margin-left: 60%;
     border-radius: 20px;
     padding: 20px 32px;
     width: 30%;
