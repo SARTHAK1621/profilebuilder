@@ -8,7 +8,6 @@ import { RegistrationComponent } from './MyComponent/registration/registration.c
 import { AppRoutingModule } from './app-routing.module';
 import { LogINNavComponent } from './MyComponent/log-innav/log-innav.component';
 import { HomeComponent } from './MyComponent/home/home.component';
-import { TestComponent } from './MyComponent/test/test.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,7 @@ import { TestComponent } from './MyComponent/test/test.component';
     RegistrationComponent,
     LogINNavComponent,
     HomeComponent,
-    TestComponent
+
   ],
   imports: [
     BrowserModule,
