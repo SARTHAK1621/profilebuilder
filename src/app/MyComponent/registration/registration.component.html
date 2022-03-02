@@ -2,17 +2,17 @@
   <h3 class="activity">REGISTER</h3>
   <form action="" method="post">
     <div class="formgroup">
-      <input type="text" name="name" id="" placeholder="Name" />
+      <input type="text"  [(ngModel)]="name"  [ngModelOptions]="{standalone: true}" placeholder="Name" />
     </div>
     <div class="formgroup">
-      <input type="text" name="emailid" id="" placeholder="Email Id" />
+      <input type="text"  [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" placeholder="Email Id" />
     </div>
     <div class="formgroup">
-      <input type="text" name="userid" id="" placeholder="User Id" />
+      <input type="text"  [(ngModel)]="id"  [ngModelOptions]="{standalone: true}" placeholder="User Id" />
     </div>
     <div class="formgroup">
-      <input type="password" name="password" id="" placeholder="password" />
+      <input type="password"  [(ngModel)]="password"  [ngModelOptions]="{standalone: true}" placeholder="password" />
     </div>
-    <button type="submit">Register</button>
+    <button (click)="check()">Register</button>
   </form>
 </div>

@@ -1,12 +1,12 @@
 <div class="container">
   <h3 class="activity">Log In</h3>
-  <form action="" method="post">
+  <form>
     <div class="formgroup">
-      <input type="text" name="userid" id="" placeholder="User Id" />
+      <input type="text" [(ngModel)]="id"  [ngModelOptions]="{standalone: true}" placeholder="User Id" />
     </div>
     <div class="formgroup">
-      <input type="password" name="password" id="" placeholder="password" />
+      <input type="password" [(ngModel)]="password"  [ngModelOptions]="{standalone: true}" placeholder="password" />
     </div>
-    <button type="submit">Log In</button>
+    <button (click)="check()">Log In</button>
   </form>
 </div>
