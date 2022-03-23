@@ -16,6 +16,7 @@ export class LogInComponent implements OnInit {
   constructor(private backendService: BackendService, private router: Router, private sharedVariables: VariablesComponent) { }
 
   ngOnInit(): void {
+   
   }
 
   check() {
@@ -26,10 +27,12 @@ export class LogInComponent implements OnInit {
       // })
       
       let returnedValue = this.backendService.login(this.id, this.password);
-      returnedValue.subscribe((res) => {
+      returnedValue.subscribe((res: any) => {
         // console.log(res);
         if(res) {
-          let loginStatus = true;
+          console.log(res)
+          //let loginStatus = true;
+          localStorage.setItem("userId", res);
           this.router.navigateByUrl('/dashboard')
 
           // this.sharedVariables.isLoggedIn.subscribe(res => {res.next(true)})

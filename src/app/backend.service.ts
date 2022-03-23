@@ -18,4 +18,12 @@ export class BackendService {
   {
     return this.httpClient.post(this.apiUrl+"register",{name:name,email:email,id:id,password:password});
   }
+
+  uploadImage(formData: FormData) {
+    console.log("inside upload" )
+    // console.log(formData.get(image))
+    return this.httpClient.post(this.apiUrl+"uploadimage", formData);
+  }
+  
+  
 }
