@@ -7,7 +7,9 @@ import { LogINNavComponent } from './MyComponent/log-innav/log-innav.component';
 import { DashboardComponent } from './MyComponent/profile/dashboard/dashboard.component';
 import { FirstpageComponent } from "./MyComponent/firstpage/firstpage.component";
 import { YourGuardGuard } from './your-guard.guard';
-
+import{FullworkComponent} from './MyComponent/profile/fullwork/fullwork.component'
+import{VolunteerComponent} from './MyComponent/profile/volunteer/volunteer.component'
+import{ EducationComponent} from './MyComponent/profile/education/education.component'
 const routes: Routes = [{
   path : "register",
   component : RegistrationComponent
@@ -26,6 +28,22 @@ const routes: Routes = [{
 {
   path :"",
   component : FirstpageComponent
+},
+{
+  path:"work",
+  component:FullworkComponent,
+  canActivate: [YourGuardGuard]
+
+},
+{
+  path:"volunt",
+  component:VolunteerComponent,
+  canActivate:[YourGuardGuard]
+},
+{
+  path:"edu",
+  component: EducationComponent,
+  canActivate:[YourGuardGuard]
 }
 ];
 

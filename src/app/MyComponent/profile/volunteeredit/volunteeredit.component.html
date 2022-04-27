@@ -1,0 +1,16 @@
+
+<form>
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input class="form-control" [(ngModel)]="title"  [ngModelOptions]="{standalone: true}" placeholder="Role" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Date</label>
+      <input class="form-control" [(ngModel)]="date"  [ngModelOptions]="{standalone: true}" placeholder="Date" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">About</label>
+        <input class="form-control" [(ngModel)]="description"  [ngModelOptions]="{standalone: true}" placeholder="About" id="exampleInputPassword1">
+      </div>
+    <button (click)="check()" class="btn btn-primary">Add Volunteer Experience</button>
+  </form>

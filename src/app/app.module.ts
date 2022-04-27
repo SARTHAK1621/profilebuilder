@@ -17,6 +17,14 @@ import { FirstpageComponent } from './MyComponent/firstpage/firstpage.component'
 import { PofilenavComponent } from './MyComponent/profile/pofilenav/pofilenav.component';
 import { DasheditComponent } from './MyComponent/profile/dashedit/dashedit.component';
 import { InfoComponent } from './MyComponent/profile/info/info.component';
+import { FullworkComponent } from './MyComponent/profile/fullwork/fullwork.component';
+import { WorkeditComponent } from './MyComponent/profile/workedit/workedit.component';
+import { WorkinfoComponent } from './MyComponent/profile/workinfo/workinfo.component';
+import { EdueditComponent } from './MyComponent/profile/eduedit/eduedit.component';
+import { EducationComponent } from './MyComponent/profile/education/education.component';
+import { VolunteereditComponent } from './MyComponent/profile/volunteeredit/volunteeredit.component';
+import { VolunteerComponent } from './MyComponent/profile/volunteer/volunteer.component';
+import { VolunteerinfoComponent } from './MyComponent/profile/volunteerinfo/volunteerinfo.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +40,14 @@ import { InfoComponent } from './MyComponent/profile/info/info.component';
     PofilenavComponent,
     DasheditComponent,
     InfoComponent,
-
+    FullworkComponent,
+    WorkeditComponent,
+    WorkinfoComponent,
+    EdueditComponent,
+    EducationComponent,
+    VolunteereditComponent,
+    VolunteerComponent,
+    VolunteerinfoComponent,
   ],
   imports: [
     BrowserModule,

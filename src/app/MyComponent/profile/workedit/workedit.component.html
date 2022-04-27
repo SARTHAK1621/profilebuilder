@@ -1,0 +1,19 @@
+<form>
+    <div class="mb-3">
+      <label class="form-label">Role</label>
+      <input class="form-control" [(ngModel)]="role"  [ngModelOptions]="{standalone: true}" placeholder="Role" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Company</label>
+      <input class="form-control" [(ngModel)]="company"  [ngModelOptions]="{standalone: true}" placeholder="Company" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Duration</label>
+      <input class="form-control" [(ngModel)]="duration"  [ngModelOptions]="{standalone: true}" placeholder="Duration" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">About</label>
+        <input class="form-control" [(ngModel)]="about"  [ngModelOptions]="{standalone: true}" placeholder="About" id="exampleInputPassword1">
+      </div>
+    <button type="submit"(click)="check()" class="btn btn-primary">Add Work Experience</button>
+  </form>

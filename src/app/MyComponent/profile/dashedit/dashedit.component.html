@@ -1,5 +1,15 @@
 <!-- <button (change)="handleUpload($event)">Picture</button> -->
 <label for="fileIp">enter file</label>
 <input (change)="handleUpload($event)" type="file" name="fileIp" id="">
-<button>Info</button>
 <button>Resume</button>
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">UserId</label>
+      <input type="text" [(ngModel)]="id"  [ngModelOptions]="{standalone: true}" placeholder="User Id" />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">About Me</label>
+      <input type="text" [(ngModel)]="about"  [ngModelOptions]="{standalone: true}" placeholder="About Me" />
+    </div>
+    <button (click)="check()" class="btn btn-primary">Submit</button>
+  </form>

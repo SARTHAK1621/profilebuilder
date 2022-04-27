@@ -8,6 +8,8 @@ import { BackendService } from 'src/app/backend.service';
 })
 export class DasheditComponent implements OnInit {
 
+  id:String=""
+  about:String=""
   constructor(private backendService: BackendService, private httpClient: HttpClient) { }
 
   ngOnInit(): void {
@@ -16,10 +18,11 @@ export class DasheditComponent implements OnInit {
   handleUpload(e: any) {
     console.log(e.target.files[0].name)
     const formData = new FormData(); 
-      
+    let id = JSON.stringify(localStorage.getItem("Id"));
     // Store form name as "file" with file data
     let image = e.target.files[0]
-    formData.append("images", image, image.name);
+    formData.append("images", image, image.name)
+    formData.append("id", id);
     // console.log(formData.get(image))
     this.httpClient.post("http://localhost:3000/uploadimage", formData, {
       responseType: 'json'
@@ -31,6 +34,12 @@ export class DasheditComponent implements OnInit {
       console.log(err)
     })
     
+  }
+  check(){
+    let returnedValue = this.backendService.updateabout(this.id, this.about);
+    returnedValue.subscribe((res) => {
+    console.log(res);
+    })
   }
 
   // onFileInput(event: any) {

@@ -10,7 +10,7 @@ import { VariablesComponent } from 'src/app/shared/variables/variables.component
 })
 export class LogInComponent implements OnInit {
   data: String = "0000";
-  id: String = "";
+  id: string = "";
   password: String = "";
 
   constructor(private backendService: BackendService, private router: Router, private sharedVariables: VariablesComponent) { }
@@ -33,6 +33,7 @@ export class LogInComponent implements OnInit {
           console.log(res)
           //let loginStatus = true;
           localStorage.setItem("userId", res);
+          localStorage.setItem("Id",this.id);
           this.router.navigateByUrl('/dashboard')
 
           // this.sharedVariables.isLoggedIn.subscribe(res => {res.next(true)})
